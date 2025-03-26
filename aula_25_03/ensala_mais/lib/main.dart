@@ -11,7 +11,9 @@ Future<void> main() async {
     url: 'https://cllcycrxpolmczpzfnzr.supabase.co',
     anonKey: dotenv.env['ANONKEYSUPABASE']!,
   );
-  runApp(MaterialApp(home: const MainApp()));
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const HomePage())); //TODO lembrar de voltar
 }
 
 class MainApp extends StatelessWidget {
